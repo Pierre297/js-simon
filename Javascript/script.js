@@ -22,8 +22,23 @@ console.log(numberList);
 casualNumbers.innerHTML = `<p>${numberList}</p>`;
 
 // Da lì parte un timer di 30 secondi.
+// timer:
+let partenza = 30;
 
-// alla fine del timer crea un ciclo di prompt che chiede i 5 numeri, quando sono corretti vengono pushati in un array vuoto
+const clock = setInterval(() => {
+    if(partenza === 0){
+        clearInterval(clock);
+        console.log("fine tempo");
+        // alla fine del timer crea un ciclo di prompt che chiede i 5 numeri, quando sono corretti vengono pushati in un array vuoto
+        
+    }else {
+        partenza--;
+        console.log(partenza);
+    }
+}, 1000);
+
+
+
 
 // display dell'array vuoto che mostra quanti numeri corretti sono stati ricordati
 
