@@ -2,7 +2,12 @@ body {
   background-color: cornflowerblue;
 }
 
-#container {
+.container {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.container-answer {
   text-align: center;
   margin-top: 200px;
 }
@@ -16,11 +21,15 @@ body {
   font-size: 45px;
 }
 
-.number-container-answer {
+.number-answer {
   border: 4px solid gray;
   background-color: blue;
   color: white;
   width: 350px;
   margin-left: 550px;
   font-size: 45px;
+}
+
+.the-end {
+  display: none;
 }
