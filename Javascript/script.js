@@ -1,4 +1,5 @@
 const casualNumbers = document.querySelector(".number-container");
+const answerGame =document.querySelector(".number-answer");
 
 // fai creare al programma 5 numeri casuali da 10 a 99 con un ciclo for 
 const numberList = [];
@@ -23,19 +24,51 @@ casualNumbers.innerHTML = `<p>${numberList}</p>`;
 
 // Da lì parte un timer di 30 secondi.
 // timer:
-let partenza = 30;
+let partenza = 5;
+let correctNum = [];
 
 const clock = setInterval(() => {
     if(partenza === 0){
+
         clearInterval(clock);
+
         console.log("fine tempo");
+
         // alla fine del timer crea un ciclo di prompt che chiede i 5 numeri, quando sono corretti vengono pushati in un array vuoto
         
+
+        for (var i = 0; i < 5; i++){
+
+            simonNum = parseInt(prompt('Inserisci un numero della sequenza'));
+
+            if (simonNum === numberList[i]) {
+                console.log(partenza);
+                
+                //numeri corretti
+                correctNum.push(simonNum);
+                casualNumbers.innerHTML = `<div>
+                    <h2>I numeri corretti sono:</h2>
+                    <div">${correctNum}</div>
+                    </div>`;
+
+            }
+          }
+
     }else {
         partenza--;
-        console.log(partenza);
     }
+
+    
 }, 1000);
+
+    
+
+
+
+
+
+
+
 
 
 
