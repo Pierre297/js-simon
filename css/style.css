@@ -5,11 +5,15 @@ body {
 .container {
   text-align: center;
   margin-top: 200px;
+  display: flex;
+  justify-content: center;
 }
 
 .container-answer {
   text-align: center;
   margin-top: 200px;
+  display: flex;
+  justify-content: center;
 }
 
 .number-container {
@@ -17,7 +21,7 @@ body {
   background-color: blue;
   color: white;
   width: 350px;
-  margin-left: 550px;
+
   font-size: 45px;
 }
 
@@ -26,7 +30,7 @@ body {
   background-color: blue;
   color: white;
   width: 350px;
-  margin-left: 550px;
+
   font-size: 45px;
 }
 

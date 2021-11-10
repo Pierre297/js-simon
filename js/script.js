@@ -25,10 +25,12 @@ casualNumbers.innerHTML = `<p>${numberList}</p>`;
 
 // Da lì parte un timer di 30 secondi.
 // timer:
-let partenza = 5;
+let partenza = 30;
 let correctNum = [];
 
 const clock = setInterval(() => {
+    console.log(partenza);
+
     if(partenza === 0){
         // display none dei numeri iniziali
         theEnd.classList.add('the-end');
@@ -52,16 +54,17 @@ const clock = setInterval(() => {
                     <h2>I numeri corretti sono:</h2>
                     <div class="number-answer">${correctNum}</div>
                     </div>`;
-
             }
           }
 
     }else {
         partenza--;
     }
-
+    
     
 }, 1000);
+
+
 
     
 
